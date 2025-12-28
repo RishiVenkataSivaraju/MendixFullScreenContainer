@@ -1,0 +1,35 @@
+.fc-container {
+    position: relative;
+    padding: 20px;
+    /* ✅ exactly 20px */
+    box-sizing: border-box;
+    background: white;
+
+    overflow: auto;
+    /* scrolling works */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE / old Edge */
+}
+
+.fc-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome / Safari */
+}
+
+.fc-fullscreen-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 10;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fc-content {
+    /* no extra padding logic */
+}
